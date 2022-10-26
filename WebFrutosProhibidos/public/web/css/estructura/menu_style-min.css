@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,900');
+body, html{
+    margin: 0;
+    padding: 0;
+}
+body{
+   font-family: 'Poppins', sans-serif;
+    font-size: 14px;color: #868686;background: #ffffff;word-wrap: break-word;
+    overflow-x: hidden;
+}
+b, strong{
+    font-weight: 600;
+}
+/*MENU MAIN*/
+.sect_top_info{
+    position: relative;
+    background: #000;
+}
+.list_redes_top{
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    padding: 10px 0;
+    text-align: right;
+}
+.list_redes_top>li{
+    display: inline-block;
+    margin: 0 10px;
+}
+.list_redes_top>li>a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+.design{
+    position: relative;
+    padding: 10px 0;
+}
+.design:before{
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    background: #df1f4d;
+    top: 0;
+    left: -150%;
+    border-bottom-right-radius: 83px;
+}
+
+/**/
+.navbar_main{
+	position: absolute;
+    top: 0px;
+    width: 100%;
+    background: transparent;
+    z-index: 12;
+    transition: all ease 500ms;
+}
+.navbar_content #navbarNavDropdown{
+    position: relative;
+    width: 100%;
+    
+}
+
+.logo_main img{
+    width: 100px;
+    max-width: 250px;
+    display: block;
+    margin: 0 auto;
+}
+
+.navbar_content #navbarNavDropdown .navbar-nav{
+    align-items: center;
+    position: relative;
+    color: #fff;
+    background-color: #fff;
+}
+
+
+.navbar_content #navbarNavDropdown .navbar-nav>li>a{
+    color: #000;
+    display: block;
+    padding: 50px 30px;
+    float: right;
+    position: relative;
+    font-weight: 700;
+    text-decoration: none;
+    overflow: hidden;
+    transition: all ease 300ms;
+}
+.navbar_content #navbarNavDropdown .navbar-nav>li{
+    position: relative;
+}
+.navbar_content #navbarNavDropdown .navbar-nav>li>a:before{
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #df1f4d;
+    transition: all ease 500ms;
+}
+
+.navbar_content #navbarNavDropdown .navbar-nav>li>a:hover
+{
+    color: #df1f4d;
+}
+
+@media(max-width: 991px){
+    
+    .navbar_content .navbar-collapse{
+        background: transparent;
+    }
+    
+    .navbar-toggler:not(.disabled):not(:disabled) {
+        background: #df1f4d;
+    }
+
+    .navbar-light .navbar-toggler
+    {
+        color: #df1f4d;
+    }
+    .logo_mobile{
+        display: block;
+    }
+    .logo_mobile img{
+        background: #edea2a;
+        width: 100%;
+        max-width: 150px;
+    }
+
+    .navbar_content #navbarNavDropdown .navbar-nav:before {
+        width: 100%;
+        border-bottom-right-radius: 50px;
+    }
+    .navbar_main{
+        background: #fff;
+    }
+    .navbar_content #navbarNavDropdown .navbar-nav {
+        padding-left: 0;
+    }
+
+    .navbar_content #navbarNavDropdown .navbar-nav>li>a
+    {
+        padding: 15px 30px;
+    }
+}
+
+@media(max-width: 575px)
+{
+    .logo_main
+    {
+        width: 40%;
+    }
+}
+/*NAVBAR FIXED*/
+.head-navfixed{
+    position: fixed;
+    top: 0;
+    background: #fff;
+    box-shadow: 0px 0px 5px #000;
+    transition: all ease 500ms;
+}   
+
+/*SECTION FOOTER*/
+.sect_foot_info{
+    padding: 50px 0;
+    background-image: url(../../../../public/img/galeria/palta3.jpg);
+    background-size: cover;
+    position: relative;
+}
+.sect_foot_info:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .4;
+}
+.box_footer .box_head h2{
+    text-align: center;
+    color: #fff;
+}
+.box_footer .box_body {
+    text-align: center;
+}
+.box_footer .box_body address{
+    text-align: center;
+    color: #fff;
+}
+.box_footer .box_body .telefonos a{
+    display: block;
+}
+.telefonos{
+    position: relative;
+    padding-left: 40px;
+    display: inline-block;
+    text-align: left;
+    margin: 20px 0;
+}
+.telefonos span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+}
+.telefonos span img{
+    width: 100%;
+}
+.telefonos a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+.list_redes_foot{
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+.list_redes_foot>li{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+.list_redes_foot>li>a{
+    display: block;
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+}
+.sect_derechos{
+    background: #3e3e40;
+    text-align: center;
+    padding: 10px 0;
+}
+.sect_derechos p{
+    color: #fff;
+    margin-bottom: 0;
+}
+.sect_derechos p span{
+    color: #df1f4d;
+    font-weight: 700;
+}
+.icon-wsp
+{
+    color: #fff;
+    font-size: 30px;
+}
+
+.navbar
+{
+    background-color: #fff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin: 10px;
+}
+
+.justify-content-end
+{
+    /*justify-content: flex-start !important;*/
+    width: 100%;
+    position: relative;
+}
+
+.navbar-expand-lg .navbar-collapse
+{
+    background-color: #fff;
+}
+
+.menu-active
+{
+    position: relative;
+}
+
+.icon-img
+{
+    position: absolute;
+    right: 0;
+    left: 0; 
+    bottom: 2px;
+    margin: auto;
+    background-image: url(../../../../public/img/iconos/icono_map.jpg);
+    object-fit: cover;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+}
+
+@media(max-width: 991px){
+
+    .icon-img
+    {
+        left: -30px;
+        margin: 0;
+    }
+}

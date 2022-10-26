@@ -1,0 +1,179 @@
+.sect-servicios{
+    height: 280px;
+    background-image: url(../../../../public/img/galeria/mango2.jpg);
+    background-size: cover;
+    padding-bottom: 15px;
+    background-position: center 26%;
+    position: relative;
+    z-index: 1;
+}
+.sect-servicios:before{
+    background: rgba(0, 0, 0, 0.7);
+    content: "";
+    height: 50vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+.height {
+    height: 100%;
+}
+.sect-servicios-title{
+    color: #fff;
+    font-weight: 600;
+    font-size: 30px;
+    display: inline-block;
+}
+.sect-servicios-title2{
+    display: inline-block;
+    float: right;
+    color: #ffffff;
+}
+.sect-servicios-title2 a{
+    color: #ffffff;
+}
+/**/
+.sect_nosotros{
+    padding: 50px 0;
+}
+
+.box_nosotros .box_head h2{
+    color: #000;
+    font-weight: 700;
+    text-align: center;
+}
+.box_nosotros .box_head h2 span{
+    color: #df1f4d;
+    text-align: center;
+}
+.box_nosotros .box_head h5{
+    font-size: 15px;
+    color: #000;
+    font-weight: 500
+}
+.box_nosotros .box_body p{
+    text-align: justify;
+}
+
+/**/
+.sect_banner_contact{
+    background-image: url(../../../../public/img/galeria/fresa2.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    position: relative;
+}
+.sect_banner_contact:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.7;
+}
+.btn_contact{
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: #fd1f4d;
+    color: #fff;
+    font-weight: 700;
+    padding: 10px;
+    border-bottom-left-radius: 35px;
+    border-top-right-radius: 35px;
+    border: 1px solid transparent;
+    transition: all ease 500ms;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.btn_contact:hover{
+    background: transparent;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    transition: all ease 500ms;
+}
+.sect_banner_contact h2{
+    color: #fff;
+    margin: 0;
+    font-size: 25px;
+    font-weight: 700;
+}
+@media(max-width: 991px){
+    .sect_banner_contact h2 {
+        margin-bottom: 25px;
+        text-align: center;
+        font-size: 20px;
+    }
+    .box_nosotros .box_head h2 {
+        font-size: 24px;
+    }
+}
+/**/
+.sect_mis_vis_val{
+    padding: 50px 0;
+}
+.box_mis_vis_val{
+    background: #f9f9f9;
+    box-shadow: 0px 0px 5px #ccc;
+    padding: 20px;
+    height: 100%;
+}
+.box_mis_vis_val .box_head span{
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0px 0px 5px #ccc;
+    padding: 10px;
+    transition: all ease 500ms;
+}
+
+.box_body_text_centerv
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(398px - 156px);
+}
+
+.box_mis_vis_val .box_body{
+    margin-top: 15px;
+}
+.box_mis_vis_val .box_body h5{
+    text-align: center;
+    color: #000;
+    font-weight: 600;
+}
+.box_mis_vis_val .box_body p{
+    text-align: justify;
+}
+.list_valores{
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.list_valores>li{
+    color: #d80027;
+}
+.list_valores>li span{
+    color: #868686;
+}
+.box_mis_vis_val:hover .box_head span{
+    transition: all ease 500ms;
+    background: #868686;
+    border-radius: 25px;
+}
+@media(max-width: 991px){
+    .box_nosotros{
+        margin-top: 30px;
+    }
+    .mt-mobile{
+        margin-top: 20px
+    }
+}

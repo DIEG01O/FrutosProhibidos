@@ -1,0 +1,138 @@
+.sect-servicios{
+    height: 280px;
+    background-image: url(../../../../public/img/servicios/bannerservicios.jpg);
+    background-size: cover;
+    padding-bottom: 15px;
+    background-position: center 26%;
+    position: relative;
+    z-index: 1;
+}
+.sect-servicios:before{
+    background: rgba(0, 0, 0, 0.7);
+    content: "";
+    height: 50vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+.height {
+    height: 100%;
+}
+.sect-servicios-title{
+    color: #fff;
+    font-weight: 600;
+    font-size: 30px;
+    display: inline-block;
+}
+.sect-servicios-title2{
+    display: inline-block;
+    float: right;
+    color: #ffffff;
+}
+.sect-servicios-title2 a{
+    color: #ffffff;
+}
+/*SEGUNDA SECCION*/
+.sect-servicios2-title{
+    color: #e41c24;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 600;
+    margin: 0px;
+    padding: 50px 0px;
+}
+.box_servicio{
+    padding-bottom: 30px;
+}
+.box_servicio .box_head{
+    position: relative;
+}
+.box_servicio .box_head .btn_vermas {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    width: 80%;
+}
+.box_servicio .box_head .btn_vermas .title{
+    position: relative;
+    background: #fff;
+    height: 40px;
+    padding: 5px 20px;
+    width: 60%;
+    transition: all ease 500ms;
+}
+.box_servicio:hover .box_head .btn_vermas .title {
+    background: #d12128;
+    color: #fff;
+    transition: all ease 500ms;
+}
+.box_servicio:hover .box_head .btn_vermas .title h3{
+    color: #fff;
+    transition: all ease 500ms;
+}
+.box_servicio .box_head .btn_vermas .title:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 40px solid #d12128;
+    border-left: 37px solid transparent;  
+    transition: all ease 500ms; 
+}
+.box_servicio:hover .box_head .btn_vermas .title:before{
+    border-bottom-color: #fff;
+
+    transition: all ease 500ms;
+}
+.box_servicio .box_head .btn_vermas .title h3{
+    margin: 0;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000;
+    font-weight: 700;
+}
+.box_servicio .box_head .btn_vermas .btn_mas{
+    height: 40px;
+    padding: 5px 20px;
+    background: #d12128;
+    line-height: 35px;
+    position: relative;
+    width: 40%;
+    text-decoration: none;
+     transition: all ease 500ms;    
+}
+.box_servicio:hover .box_head .btn_vermas .btn_mas{
+    background: #fff;
+   
+    transition: all ease 500ms;
+}
+.box_servicio .box_head .btn_vermas .btn_mas a{
+    display: block;
+    color: #ffffff;
+    font-weight: 600;
+}
+.box_servicio .box_head .btn_vermas .btn_mas a:hover,
+.box_servicio .box_head .btn_vermas .btn_mas a:focus,
+.box_servicio .box_head .btn_vermas .btn_mas a:active{
+    outline: none;
+    text-decoration: none;
+}
+.box_servicio:hover .box_head .btn_vermas .btn_mas a{
+     color: #000;
+     transition: all ease 500ms;
+}
+/*MODAL SERVICIOS*/
+.modal .modal-header{
+    background: #e41c24;
+    color: #fff;
+}
+.descrip_service{
+    margin-top: 25px;
+    text-align: justify;
+    color: #000;
+}

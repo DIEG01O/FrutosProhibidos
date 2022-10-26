@@ -1,0 +1,147 @@
+.sect-servicios{
+    height: 280px;
+    background-image: url(../../../../public/img/servicios/bannerservicios.jpg);
+    background-size: cover;
+    padding-bottom: 15px;
+    background-position: center 26%;
+    position: relative;
+    z-index: 1;
+}
+.sect-servicios:before{
+    background: rgba(0, 0, 0, 0.7);
+    content: "";
+    height: 50vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+.height {
+    height: 100%;
+}
+.sect-servicios-title{
+    color: #fff;
+    font-weight: 600;
+    font-size: 30px;
+    display: inline-block;
+}
+.sect-servicios-title2{
+    display: inline-block;
+    float: right;
+    color: #ffffff;
+}
+.sect-servicios-title2 a{
+    color: #ffffff;
+}
+/**/
+.sect_galeria{
+    padding: 50px 0;
+    padding-bottom: 90px;
+}
+.sect_galeria .item2 a{
+    display: block;
+    position: relative;
+
+}
+
+.item2 a img
+{
+    height: 154px;
+    width: 238px;
+    background-size: cover;
+    object-fit: cover;
+}
+.sect_galeria .item2 a:before{
+    content: "\f067";
+    font-family: FontAwesome;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -o-flex;
+    align-items: center;
+    justify-content: center;
+    color: #8a8a8a;
+    font-size: 50px;
+    height: 100%;
+    background: #000;
+    opacity: 0;
+    transition: all ease 500ms;
+}
+.sect_galeria .item2 a:hover:before{
+    opacity: .7;
+    transition: all ease 500ms;
+}
+.caption_galeria{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    color: #fff;
+    transform: scale(0);
+    transition: all ease 500ms;
+}
+.sect_galeria .item2 a:hover .caption_galeria{
+    transform: scale(1);
+    transition: all ease 500ms;
+}
+
+.filas
+{
+    margin-top: 50px;
+}
+
+.item2 p
+{
+    color:#000;
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+
+@media (min-width: 768px)
+{
+    .container
+    {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 992px)
+{
+    .container
+    {
+        max-width: 1140px;
+    }
+}
+
+
+@media (min-width: 1200px) 
+{
+    .container
+    {
+        max-width: 1140px;
+    }
+}
+
+
+
+@media (min-width: 540px) {
+    .sect_galeria .item2 a
+    {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 320px) {
+    .sect_galeria .item2 a
+    {
+        display: block;
+        margin: 0 auto;
+    }
+}
